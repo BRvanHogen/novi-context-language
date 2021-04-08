@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {LanguageContext} from "./context/LanguageContext";
 
 ReactDOM.render(
   <React.StrictMode>
+      <LanguageContext>
     <App />
+      </LanguageContext>
   </React.StrictMode>,
   document.getElementById('root')
 );
